@@ -1,8 +1,8 @@
 using Images
 import ImageView
 
-imgdy = grayim(UInt8[y for y=0x00:0xff, x=0:100])
-imgdx = grayim(UInt8[x for y=1:100, x=0x00:0xff])
+imgdy = ufixedview(UInt8[y for y=0x00:0xff, x=0:100])
+imgdx = ufixedview(UInt8[x for y=1:100, x=0x00:0xff])
 ImageView.view(imgdy)
 ImageView.view(imgdx)
 
